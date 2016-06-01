@@ -1,5 +1,5 @@
 <?php
-namespace mapananuvem;
+namespace mapananuvemThemeDF;
 use MapasCulturais\Themes\BaseV1;
 use MapasCulturais\App;
 
