@@ -1,4 +1,3 @@
-# mapananuvem
 # Mapa na nuvem
 
 Interface customizada do projeto [Mapas Culturais](https://github.com/hacklabr/mapasculturais) do Instituto TIM. Adaptação feita exclusivamente para a Secretaria de Cultura do GDF.
