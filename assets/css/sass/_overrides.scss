@@ -114,6 +114,7 @@ h6 {
     }
 }
 
+
 .ng-scope #main-nav {
     clear: both;
     @media screen and (min-width: $screen-tablet) {
@@ -121,7 +122,7 @@ h6 {
         float: right;
     }
     a{
-        color: black;
+        color: white !important;
     }
 }
 
@@ -173,7 +174,7 @@ h6 {
     @media print, screen and (min-width: $screen-desktop) {
         padding: $padding-base $padding-large;
         padding-top: 0.375rem;
-    	padding-bottom: 0.375rem;
+        padding-bottom: 0.375rem;
     }
 }
 
@@ -288,6 +289,9 @@ h6 {
         border-right: 0px solid $brand-accent;
         border-left: 0px solid $brand-accent;
     }
+}
+.ng-scope #main-nav a {
+  color: white !important; 
 }
 //** Events
 #entities-menu-event {
@@ -771,6 +775,30 @@ $unicode-project: '\e905';
 .icon-project {
     &:before {
         content: $unicode-project;
+    }
+}
+
+//** Entity layers.
+#mc-entity-layers {
+    .btn-map-event, .btn-map-agent, .btn-map-space{
+        &:before{
+            font-family: 'icomoon' !important;
+        }
+    }
+    .btn-map-event {
+        &:before {
+            content: $unicode-event;
+        }      
+    }
+    .btn-map-agent {
+        &:before {
+            content: $unicode-agent;
+        }
+    }
+    .btn-map-space {
+        &:before {
+            content: $unicode-space;
+        }
     }
 }
 
