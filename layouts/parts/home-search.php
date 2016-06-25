@@ -5,7 +5,7 @@
         <p class="text">
             O Distrito Federal é um mosaico cultural, um território com influências de todo Brasil. Essa diversidade é acolhida por um elemento em comum: o céu, e o movimento de suas nuvens, marca de nossa cidade, sob o qual convivem tradição e inovação.<br/>
             É com espírito de pluralidade que nasce o MAPA NAS NUVENS: espaço colaborativo de mapeamento de pessoas, lugares, territórios e ações artísticas no DF.<br/>
-            Navegue nesse espaço e descubra a cultura do DF! Seja bem-vindo ao MAPA NAS NUVEMS!
+            Navegue nesse espaço e descubra a cultura do DF! Seja bem-vindo ao MAPA NAS NUVENS!
         </p>
     </div>
     <div class="box">

@@ -90,6 +90,29 @@ h6 {
     }
 }
 
+.controller-panel #main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $z-index-main-header;
+    background: #fff;
+    border-top: 6px solid $brand-accent;
+    border-bottom: 1px solid #eee;
+    h1 {
+        margin-bottom: 0;
+        img {
+            display: block;
+        }
+    }
+    @media screen and (min-width: $screen-tablet) {
+        border-top: 6px solid $brand-accent;
+    }
+    @media print {
+        position: relative;
+        border-top: none;
+    }
+}
+
 //== Main Nav
 //
 //## Main nav includes entities menu and session menu.
@@ -113,7 +136,11 @@ h6 {
         }
     }
 }
-
+.controller-panel #main-nav{
+    a{
+        color: black;
+    }
+}
 
 .ng-scope #main-nav {
     clear: both;
@@ -128,6 +155,16 @@ h6 {
 
 #brand-logo{
     display: none;
+}
+.controller-panel #brand-logo{
+    display: inline;
+    img {
+        width: 170px;
+        @media screen and (min-width: $screen-tablet) {
+            width: 168px;
+        }
+    }
+
 }
 .ng-scope #brand-logo {
     display: inline;
@@ -363,6 +400,9 @@ h6 {
         margin-top: 0 !important;
         background-color: #fff;
     }
+}
+.controller-panel #main-section {
+    margin-top: 68px;
 }
 
 // _home.scss
@@ -674,6 +714,11 @@ h6 {
                 }
             }
         }
+    }
+}
+#home-developers{
+    .box {
+        padding-top: 8em;
     }
 }
 #home-search-filter {
