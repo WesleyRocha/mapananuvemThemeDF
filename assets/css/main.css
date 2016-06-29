@@ -4893,7 +4893,10 @@ h6 {
       clear: none;
       float: right; } }
   .ng-scope #main-nav a {
-    color: white !important; }
+    color: black; }
+    @media screen and (max-width: 768px) {
+      .ng-scope #main-nav a {
+        color: white !important; } }
 
 #brand-logo {
   display: none; }
@@ -5041,9 +5044,6 @@ h6 {
     float: left;
     border-right: 0px solid #000000;
     border-left: 0px solid #000000; } }
-
-.ng-scope #main-nav a {
-  color: white !important; }
 
 #entities-menu-event.active, #entities-menu-event:hover {
   border-top-color: #52FF92;
@@ -5197,6 +5197,7 @@ h6 {
           margin: 0 6%;
           width: 87vw; } }
       #home-intro .box #home-search-form .rota {
+        z-index: -1;
         position: absolute;
         border-radius: 2em;
         width: 0.8em;
@@ -5310,7 +5311,8 @@ h6 {
     #home-developers .parceiros .logo-gdf {
       background: transparent url(../img/logo-gdf.png) no-repeat top;
       background-size: 100%;
-      width: 186px; }
+      width: 186px;
+      margin-top: 14px; }
     #home-developers .parceiros .logo-obec {
       background: transparent url(../img/OBEC-Logo.png) no-repeat top;
       background-size: 100%;
@@ -5324,7 +5326,7 @@ h6 {
       background: transparent url(../img/logo-tim.png) no-repeat top;
       background-size: 100%;
       width: 178px;
-      margin-top: 14px; }
+      background-position: center; }
 
 #home-intro, #home-events, #home-agents, #home-projects, #home-spaces, #home-developers {
   background-attachment: fixed; }
@@ -5343,7 +5345,7 @@ h6 {
     #home-intro .box .box-content, #home-events .box .box-content, #home-agents .box .box-content, #home-projects .box .box-content, #home-spaces .box .box-content, #home-developers .box .box-content {
       width: 32em;
       margin-left: auto;
-      margin-top: 3em; }
+      margin-top: 2em; }
       @media screen and (max-width: 768px) {
         #home-intro .box .box-content, #home-events .box .box-content, #home-agents .box .box-content, #home-projects .box .box-content, #home-spaces .box .box-content, #home-developers .box .box-content {
           margin: 0 20px;
@@ -5362,6 +5364,16 @@ h6 {
         color: white; }
       #home-intro .box .box-content h1 .icon, #home-events .box .box-content h1 .icon, #home-agents .box .box-content h1 .icon, #home-projects .box .box-content h1 .icon, #home-spaces .box .box-content h1 .icon, #home-developers .box .box-content h1 .icon {
         font-size: 1.4rem; }
+    #home-intro .box.image, #home-events .box.image, #home-agents .box.image, #home-projects .box.image, #home-spaces .box.image, #home-developers .box.image {
+      margin-top: -4em; }
+      #home-intro .box.image .box-content, #home-events .box.image .box-content, #home-agents .box.image .box-content, #home-projects .box.image .box-content, #home-spaces .box.image .box-content, #home-developers .box.image .box-content {
+        margin: 0 0 0 auto; }
+        #home-intro .box.image .box-content .random-feature, #home-events .box.image .box-content .random-feature, #home-agents .box.image .box-content .random-feature, #home-projects .box.image .box-content .random-feature, #home-spaces .box.image .box-content .random-feature, #home-developers .box.image .box-content .random-feature {
+          background-size: cover; }
+          #home-intro .box.image .box-content .random-feature:before, #home-events .box.image .box-content .random-feature:before, #home-agents .box.image .box-content .random-feature:before, #home-projects .box.image .box-content .random-feature:before, #home-spaces .box.image .box-content .random-feature:before, #home-developers .box.image .box-content .random-feature:before {
+            padding-top: 42%; }
+    #home-intro .box.events .slimScrollDiv, #home-events .box.events .slimScrollDiv, #home-agents .box.events .slimScrollDiv, #home-projects .box.events .slimScrollDiv, #home-spaces .box.events .slimScrollDiv, #home-developers .box.events .slimScrollDiv {
+      height: 55px; }
 
 #home-developers .box {
   padding-top: 8em; }
@@ -5407,6 +5419,9 @@ h6 {
     list-style: none; }
     #home-nav ul li a {
       background: rgba(0, 0, 0, 0.7) !important; }
+  @media screen and (max-width: 768px) {
+    #home-nav {
+      display: none; } }
 
 .icon-event, .icon-space, .icon-agent, .icon-project {
   width: 2.2rem; }
@@ -5444,5 +5459,8 @@ h6 {
   content: ""; }
 #mc-entity-layers .btn-map-space:before {
   content: ""; }
+
+.dropdown .submenu-dropdown {
+  min-width: 102%; }
 
 /*# sourceMappingURL=main.css.map */

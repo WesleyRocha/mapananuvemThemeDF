@@ -1,28 +1,28 @@
 <section id="home-intro" class="js-page-menu-item home-entity clearfix">
     <div class="branding">
         <span class="tipo">Mapa nas Nuvens</span>
-        <h1>Seja bem vindo!</h1>
+        <h1>Seja bem vind@!</h1>
         <p class="text">
             O Distrito Federal é um mosaico cultural, um território com influências de todo Brasil. Essa diversidade é acolhida por um elemento em comum: o céu, e o movimento de suas nuvens, marca de nossa cidade, sob o qual convivem tradição e inovação.<br/>
-            É com espírito de pluralidade que nasce o MAPA NAS NUVENS: espaço colaborativo de mapeamento de pessoas, lugares, territórios e ações artísticas no DF.<br/>
-            Navegue nesse espaço e descubra a cultura do DF! Seja bem-vindo ao MAPA NAS NUVENS!
+            É com espírito de pluralidade que nasce o MAPA NAS NUVENS: espaço colaborativo de mapeamento de pessoas, lugares, territórios e ações culturais.<br/>
+            Navegue nesse espaço e descubra a cultura do DF! Seja bem-vind@ ao MAPA NAS NUVENS!
         </p>
     </div>
     <div class="box">
         <form id="home-search-form" class="clearfix" ng-non-bindable>
-            <h1>Cartografia cultural do DF.</h1>
+            <h1>Cartografia cultural do DF</h1>
+            <input tabindex="1" id="campo-de-busca" class="search-field" type="text" name="campo-de-busca" placeholder="Digite uma palavra-chave"/>
             <div class="rota">
                 <div class="rota1"></div>
                 <div class="rota2"></div>
                 <div class="view-more"><a class="hltip icon icon-select-arrow" href="#home-events" title="Saiba mais"></a></div>
             </div>
-            <input tabindex="1" id="campo-de-busca" class="search-field" type="text" name="campo-de-busca" placeholder="Digite uma palavra-chave"/>
             <div id="home-search-filter" class="dropdown" data-searh-url-template="<?php echo $app->createUrl('site','search'); ?>##(global:(enabled:({{entity}}:!t),filterEntity:{{entity}}),{{entity}}:(keyword:'{{keyword}}'))">
                 <div class="placeholder"><span class="icon icon-search"></span> Buscar</div>
                 <div class="submenu-dropdown">
                     <ul>
                         <?php if($app->isEnabled('events')): ?>
-                            <li tabindex="2" id="events-filter"  data-entity="event"><span class="icon icon-event"></span> Eventos</li>
+                            <li tabindex="2" id="events-filter"  data-entity="event"><span class="icon icon-event"></span> Ações</li>
                         <?php endif; ?>
                         
                         <?php if($app->isEnabled('agents')): ?>
@@ -34,7 +34,7 @@
                         <?php endif; ?>
                         
                         <?php if($app->isEnabled('projects')): ?>
-                            <li tabindex="5" id="projects-filter" data-entity="project" data-searh-url-template="<?php echo $app->createUrl('site','search'); ?>##(global:(enabled:({{entity}}:!t),filterEntity:{{entity}},viewMode:list),{{entity}}:(keyword:'{{keyword}}'))"><span class="icon icon-project"></span> Projetos</li>
+                            <!-- <li tabindex="5" id="projects-filter" data-entity="project" data-searh-url-template="<?php echo $app->createUrl('site','search'); ?>##(global:(enabled:({{entity}}:!t),filterEntity:{{entity}},viewMode:list),{{entity}}:(keyword:'{{keyword}}'))"><span class="icon icon-project"></span> Projetos</li> -->
                         <?php endif; ?>
                     </ul>
                 </div>

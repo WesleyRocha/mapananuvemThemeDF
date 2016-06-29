@@ -63,6 +63,7 @@ $url_search_agents = $this->searchAgentsUrl;
             </div>
         </div>
     </div>
+    <!-- 
     <div class="box">
         <div class="box-content">
             <?php if($agent): ?>
@@ -76,8 +77,9 @@ $url_search_agents = $this->searchAgentsUrl;
                 </div>
             </a>
             <?php endif; ?>
-           <!--  <a class="btn btn-accent btn-large add" href="<?php echo $app->createUrl('agent', 'create') ?>">Adicionar agente</a>
-            <a class="btn btn-accent btn-large" href="<?php echo $url_search_agents ?>">Ver tudo</a> -->
+            <a class="btn btn-accent btn-large add" href="<?php echo $app->createUrl('agent', 'create') ?>">Adicionar agente</a>
+            <a class="btn btn-accent btn-large" href="<?php echo $url_search_agents ?>">Ver tudo</a>
         </div>
     </div>
+    -->
 </article>

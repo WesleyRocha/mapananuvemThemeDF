@@ -31,15 +31,15 @@ $url_search_events = $this->searchEventsUrl;
             <div class="clearfix">
                 <div class="statistics">
                     <div class="statistic"><?php echo $num_events ?></div>
-                    <div class="statistic-label">ações agendados</div>
+                    <div class="statistic-label">ações agendadas</div>
                 </div>
                 <div class="statistics">
                     <div class="statistic"><?php echo $num_verified_events ?></div>
-                    <div class="statistic-label">ações da <?php $this->dict('home: abbreviation'); ?></div>
+                    <div class="statistic-label">Ações da Secult</div>
                 </div>
             </div>
             <p>Ação cultural é a parte mínima de um projeto cultural, continuado ou não, multidisciplinar ou setorial, que tenha objetivo definido e impacto imediato.</p>
-            <h4>Encontre ações por</h4>
+            <!-- <h4>Encontre ações por</h4> -->
             <ul class="abas clearfix">
                 <li class="active"><a href="#event-terms">Linguagem</a></li>
             </ul>
@@ -52,16 +52,19 @@ $url_search_events = $this->searchEventsUrl;
             </div>
         </div>
     </div>
-    <div class="box">
+    <div class="box image">
+    <?php if($event): ?>
+    <div class="box image events">
+    <?php endif; ?>
         <div class="box-content">
             <?php if($event): ?>
             <a href="<?php echo $event->singleUrl ?>">
                 <div <?php echo $event_img_attributes;?>>
-                    <div class="feature-content">
+                    <!-- <div class="feature-content">
                         <h3>destaque</h3>
                         <h2><?php echo $event->name ?></h2>
                         <p><?php echo $event->shortDescription ?></p>
-                    </div>
+                    </div> -->
                 </div>
             </a>
             <?php endif; ?>
